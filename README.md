@@ -1,6 +1,7 @@
 # EtherLab
 
 6.3 CPU Isolation 설정 (Xenomai 및 RT-Preempt 동일)
+
 $
 sudo vi /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.enable_rc6=0 i915.enable_dc=0
