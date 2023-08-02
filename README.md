@@ -10,8 +10,10 @@ xenomai.supported_cpus=0x3”
 $
 sudo update-grub
 
-7.1 IgH EtherLAB
+# 7.1 IgH EtherLAB
+
 -Xenomai
+
 $ cd /usr/src/realtime/
 $ sudo -s
 #git clone https://github.com/ribalda/ethercat.git ethercat_xenomai -> 오래 된거라 최신 gitLab꺼 사용해야 할 듯
@@ -26,6 +28,7 @@ enable-e1000e=yes --enable-r8169=yes --prefix=/opt/etherlab_xenomai
 #make install
 
 -RT_Preempt
+
 $ cd /usr/src/realtime/
 $ sudo -s
 #git clone https://github.com/ribalda/ethercat.git
@@ -38,13 +41,15 @@ make
 #make modules_install
 #make install
 
-7.2 Ethernet 장치를 eth* 변경
+# 7.2 Ethernet 장치를 eth* 변경
+
 #sudo vi /etc/default/grub
 GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"   -> 하면 네트워크 초기화 되는듯 인터넷 ip새로 입력해야함.
 #update-grub
 #reboot
 
-7.3 IgH 사용법 (Xenomai 및 RT-Preempt 동일)
+# 7.3 IgH 사용법 (Xenomai 및 RT-Preempt 동일)
+
 #cd /opt/etherlab_xenomai
 #ln -s /opt/etherlab_xenomai/etc/ethercat.conf /etc/ethercat.conf
 #ln -s /opt/etherlab_xenomai/bin/ethercat /usr/bin/
