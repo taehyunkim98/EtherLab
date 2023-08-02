@@ -61,4 +61,4 @@ MASTER0_DEVICE="c4:00:ad:2b:37:0a"
 DEVICE_MODULES="generic"
 #ethercatctl start
 #ethercat slaves
-# ethercatctl stop
+#ethercatctl stop
