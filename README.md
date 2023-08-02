@@ -17,7 +17,9 @@ sudo update-grub
 -Xenomai
 
 $ cd /usr/src/realtime/
+
 $ sudo -s
+
 #git clone https://github.com/ribalda/ethercat.git ethercat_xenomai -> 오래 된거라 최신 gitLab꺼 사용해야 할 듯
 #cd ethercat_xenomai
 #./bootstrap
