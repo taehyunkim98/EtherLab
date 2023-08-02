@@ -4,9 +4,11 @@
 
 $
 sudo vi /etc/default/grub
+
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.enable_rc6=0 i915.enable_dc=0
 noapic xeno_nucleus.xenomai_gid=4390 xenomai.allowed_group=4390 isolcpus=0,1
 xenomai.supported_cpus=0x3”
+
 $
 sudo update-grub
 
